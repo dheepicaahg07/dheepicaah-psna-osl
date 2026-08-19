@@ -1,6 +1,6 @@
 class Order{
     public int orderId;
-    public String orderStatus;
+    public OrderStatus orderStatus;
 
     public Order(int orderId) {
         this.orderId = orderId;
@@ -12,8 +12,26 @@ class Order{
     }
 }
 
-public class main{
-    static void main() {
-        Order order = new Order();
-    }
+enum OrderStatus{
+    PENDING,
+    SHIPPED,
+    DELIVERED,
+    CANCELLED
+}
+
+public class Main {
+   public static void main(String[] args) {
+       Order order = new Order(orderId:1);
+       System.out.println("Order ID: " + order.orderId);
+
+       Order order1 = new Order(orderId:2, OrderStatus.PENDING);
+
+       Order order2 = new Order(orderId:2, OrderStatus.PENDING);
+
+
+       System.out.println("Order status: " + order.orderStatus);
+
+
+   }
+
 }
