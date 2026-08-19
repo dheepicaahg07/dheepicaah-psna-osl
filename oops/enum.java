@@ -11,6 +11,6 @@ enum Month {
 class enum {
     public static void main(String[] args) {
         Month month = Month.JANUARY;
-        System.out.println("Next Month: " + month)c
+        System.out.println("Next Month: " + month);
     }
         }

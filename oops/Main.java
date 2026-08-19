@@ -1,11 +1,18 @@
 class Order{
-    0rder(){
-        System.out.println("Object Oriented Created")
+    public int orderId;
+    public String orderStatus;
 
+    public Order(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public Order(int orderId, String orderStatus) {
+        this.orderId = orderId;
+        this.orderStatus = orderStatus;
     }
 }
 
-public class Main {
+public class main{
     static void main() {
         Order order = new Order();
     }
