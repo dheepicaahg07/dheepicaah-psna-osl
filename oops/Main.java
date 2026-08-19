@@ -1,5 +1,8 @@
-class Order {
+class Order{
+    0rder(){
+        System.out.println("Object Oriented Created")
 
+    }
 }
 
 public class Main {
